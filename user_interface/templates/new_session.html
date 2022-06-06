@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}Configure New Session{% endblock %}
+{% block content %}
+<div class="center">
+	<div>
+		<h1>Get ready {{ profile_info.name }}</h1>
+
+		<div class="logindiv">
+			<form class="loginform" method="POST" action="/simulate_new_session">
+				<div class="formname">
+					<label class="formlabel" for="profile_id"></label>
+					<input
+						class="forminput"
+						id="profile_id"
+						name="profile_id"
+						type="hidden"
+						value="{{ profile_id }}"
+					/>
+				</div>
+				<div class="formname">
+					<label class="formlabel" for="time"> Select Session Time </label>
+					<!-- <input type="number" id="tentacles" name="tentacles" min="10" max="100"> -->
+					<select id="time" name="time">
+						<option value="1">5</option>
+						<option value="2">10</option>
+						<option value="3">15</option>
+						<option value="4">20</option>
+						<option value="5">25</option>
+						<option value="6">30</option>
+					</select>
+				</div>
+				<div class="buttondiv">
+					<button type="submit" class="formbutton">Start Session</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="bottom"></div>
+	</div>
+	{% endblock content %}
+</div>

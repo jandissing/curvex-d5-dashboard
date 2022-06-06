@@ -1,0 +1,11 @@
+/.DS_Store
+/.env
+/.ipynb_checkpoints
+/__pycache__
+user_interface/.DS_Store
+.pyc
+.ipynb
+user_interface/
+.env/
+/user_interface
+/user_interface/

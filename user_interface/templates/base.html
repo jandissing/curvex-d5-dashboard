@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% block head %}
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{% block title %}{% endblock %} - Group208-INT</title>
+		<link
+			rel="icon"
+			type="image/png"
+			href="/user_interface/assets/favicon.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="/user_interface/assets/new_session_style.css"
+		/>
+		{% endblock %}
+	</head>
+	<body>
+		<div class="containerr">
+			<div class="top">
+				<h2>CurveX-Logo</h2>
+			</div>
+			{% block content %} {% endblock %}
+		</div>
+	</body>
+</html>
